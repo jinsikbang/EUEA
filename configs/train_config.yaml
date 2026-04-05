@@ -1,0 +1,54 @@
+model:
+  visual_encoder:
+    image_model: vit_large_patch14_clip_336.openai
+    pretrained: true
+    use_pointcloud: true
+    pc_input_dim: 6
+    pc_hidden_dim: 256
+    output_dim: 1024
+  language_decoder:
+    model_name: meta-llama/Llama-3.1-8B-Instruct
+    use_lora: true
+    lora:
+      r: 16
+      alpha: 32
+      dropout: 0.05
+      target_modules:
+        - q_proj
+        - v_proj
+        - k_proj
+        - o_proj
+    hidden_dim: 4096
+  num_query_tokens: 32
+
+data:
+  dataset: embodiedscan   # one of: embodiedscan, scanqa, sqa3d
+  data_root: /data/euea
+  image_size: 336
+  num_points: 4096
+  num_workers: 8
+  pin_memory: true
+
+training:
+  output_dir: outputs/euea_train
+  num_epochs: 10
+  batch_size: 8
+  gradient_accumulation_steps: 4
+  learning_rate: 1.0e-4
+  weight_decay: 0.05
+  warmup_ratio: 0.03
+  lr_scheduler: cosine
+  max_grad_norm: 1.0
+  fp16: false
+  bf16: true
+  seed: 42
+  save_every: 1
+  eval_every: 1
+  log_every: 50
+  resume_from: null
+
+wandb:
+  enabled: true
+  project: EUEA
+  entity: null
+  name: null
