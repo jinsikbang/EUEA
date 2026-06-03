@@ -9,11 +9,11 @@
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat" alt="License: MIT"></a>
 </p>
 
-**[Jinsik Bang](https://eu-ea.github.io/), Jaeyeon Bae, Donggyu Lee, Siyeol Jung, Taehwan Kim**
+**[Jinsik Bang](https://eu-ea.github.io/), Jaeyeon Bae, Donggyu Lee, **[Siyeol Jung](https://www.linkedin.com/in/siyeoljung/), Taehwan Kim**
 
 Ulsan National Institute of Science and Technology (UNIST)
 
-_CVPR 2026_
+_CVPRF 2026_
 
 </div>
 
@@ -47,8 +47,9 @@ current VLMs fall short in environmental understanding.
 
 ## News
 
-- **2026** — EUEA is accepted to **CVPR 2026** 🎉
-- **2026** — Paper, project page, datasets, and model checkpoints are released.
+- **2026.05** — Paper, project page, datasets, and model checkpoints are released.
+- **2026.02** — EUEA is accepted to **CVPRF 2026** 🎉
+
 
 ## Resources
 
@@ -56,34 +57,35 @@ current VLMs fall short in environmental understanding.
 | --- | --- |
 | 📝 Paper (arXiv) | https://arxiv.org/abs/2604.19839 |
 | 🌐 Project Page | https://eu-ea.github.io/ |
-| 🤗 Datasets (`EUEA-LangR`) | https://huggingface.co/bangskitchen — *EUEA-LangR* collection |
-| 🤗 Checkpoints (`EUEA-ALFRED`) | https://huggingface.co/bangskitchen — *EUEA-ALFRED* collection |
+| 🤗 Datasets (`EUEA-LangR`) | https://huggingface.co/collections/bangskitchen/euea-langr — *EUEA-LangR* collection |
+| 🤗 Checkpoints (`EUEA-ALFRED`) | https://https://huggingface.co/collections/bangskitchen/euea-alfred — *EUEA-ALFRED* collection |
 
 ## Datasets
 
 EUEA is built and evaluated on two embodied benchmarks, each with seen and unseen
-splits for training and validation:
+splits for SFT and GRPO and skill evaluation:
 
 - **ALFRED** — instruction-following household tasks in interactive 3D scenes.
 - **LangR** — language-grounded rearrangement tasks.
 
-Skill-level supervision is provided for each competency (object grounding, object
-interaction, planning, action grounding, action anticipation, and goal
+Skill-level supervision is provided for each competency (object grounding, object detection for 
+interaction, planning, action understanding, and goal
 recognition), enabling both fine-tuning and fine-grained evaluation.
 
 All datasets are released in the
-[**EUEA-LangR**](https://huggingface.co/bangskitchen) collection on Hugging Face.
+[**EUEA-ALFRED**](https://huggingface.co/datasets/bangskitchen/EUEA_ALFRED_dataset)  and [**EUEA-LangR**](https://huggingface.co/datasets/bangskitchen/EUEA_LangR_dataset) collection on Hugging Face.
 
 ## Model Checkpoints
 
 Fine-tuned EUEA checkpoints are released in the
-[**EUEA-ALFRED**](https://huggingface.co/bangskitchen) collection on Hugging Face.
+[**EUEA-ALFRED**](https://huggingface.co/collections/bangskitchen/euea-alfred) and [**EUEA-LangR**](https://huggingface.co/collections/bangskitchen/euea-langr) collection on Hugging Face.
 The framework is model-agnostic and has been validated on a range of open
 vision-language backbones, including:
 
-- InternVL2.5-4B / InternVL3-8B
-- Qwen2.5-VL-3B
-- MiniCPM-V-4.5
+- InternVL2.5-4B, InternVL2.5-8B
+- InternVL3-8B
+- Qwen2.5-VL-3B, Qwen2.5-VL-7B
+- ablations
 
 ## Getting Started
 
