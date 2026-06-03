@@ -57,8 +57,8 @@ current VLMs fall short in environmental understanding.
 | --- | --- |
 | 📝 Paper (arXiv) | https://arxiv.org/abs/2604.19839 |
 | 🌐 Project Page | https://eu-ea.github.io/ |
-| 🤗 Datasets | https://huggingface.co/collections/bangskitchen/euea-alfred (*EUEA ALFRED*) https://huggingface.co/collections/bangskitchen/euea-langr (*EUEA LangR*) |
-| 🤗 Checkpoints | https://https://huggingface.co/collections/bangskitchen/euea-alfred (*EUEA ALFRED*) https://https://huggingface.co/collections/bangskitchen/euea-langr (*EUEA LangR*) collection |
+| 🤗 Datasets | https://huggingface.co/datasets/bangskitchen/EUEA_ALFRED_dataset (*EUEA ALFRED*) https://huggingface.co/datasets/bangskitchen/EUEA_LangR_dataset (*EUEA LangR*) |
+| 🤗 Checkpoints | https://huggingface.co/collections/bangskitchen/euea-alfred (*EUEA ALFRED*) https://huggingface.co/collections/bangskitchen/euea-langr (*EUEA LangR*) collection |
 
 ## Datasets
 
