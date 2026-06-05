@@ -9,7 +9,7 @@
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat" alt="License: MIT"></a>
 </p>
 
-**[Jinsik Bang](https://eu-ea.github.io/), Jaeyeon Bae, Donggyu Lee, **[Siyeol Jung](https://www.linkedin.com/in/siyeoljung/), Taehwan Kim**
+**[Jinsik Bang](https://eu-ea.github.io/), Jaeyeon Bae, Donggyu Lee, [Siyeol Jung](https://www.linkedin.com/in/siyeoljung/), Taehwan Kim**
 
 Ulsan National Institute of Science and Technology (UNIST)
 
